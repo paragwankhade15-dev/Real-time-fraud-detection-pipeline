@@ -23,3 +23,10 @@ Now, start the Producer to begin sending transactions from the CSV file.
 On the Right: You will see Sent: Transaction 1, Sent: Transaction 2...
 
 On the Left: You will see the instant analysis: ✅ Safe: $45.00 or 🚨 FRAUD ALERT: $2400.00.
+https://www.kaggle.com/datasets/arockiaselciaa/creditcardcsv?resource=download
+
+📝 Implementation Steps
+Infrastructure: Start Kafka/Zookeeper via Docker Compose.
+Topic Creation: Kafka automatically creates the transactions topic on the first message.
+Producer Engine: Ingests CSV data and streams it to the broker.
+Consumer Logic: Filters streams in real-time to identify high-risk transactions.
